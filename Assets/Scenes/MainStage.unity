@@ -99,7 +99,7 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 0.59
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.155}
@@ -143,6 +143,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.03}
   m_EdgeRadius: 0
+--- !u!50 &3177930
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3177928}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 5
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!4 &3177931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4484547044011608, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
@@ -156,13 +176,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3177928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 2d967614c2c42a1468640155b304ca36, type: 2}
+    - {fileID: 11400000, guid: c69c179a67ba7db4aaf9bd4f139aa592, type: 2}
 --- !u!114 &3177933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,8 +195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 2128412417}
 --- !u!1 &38565222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1289647517313174, guid: 49dd8344790d7344ebb08b53329abbe2,
@@ -3949,8 +3970,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 1743819954}
+    - {fileID: 38565222}
 --- !u!4 &1085533091
 Transform:
   m_ObjectHideFlags: 0
@@ -3974,7 +3997,7 @@ Prefab:
     - target: {fileID: 114350475238397140, guid: 49dd8344790d7344ebb08b53329abbe2,
         type: 2}
       propertyPath: _data._objectReferences.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4195220724206766, guid: 49dd8344790d7344ebb08b53329abbe2, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4039,7 +4062,7 @@ Prefab:
     - target: {fileID: 114350475238397140, guid: 49dd8344790d7344ebb08b53329abbe2,
         type: 2}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":25.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 114350475238397140, guid: 49dd8344790d7344ebb08b53329abbe2,
         type: 2}
@@ -4840,6 +4863,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1231751689256590, guid: 6c95b7f46ddb9554e8e18cd567acf017,
     type: 2}
   m_PrefabInternal: {fileID: 1614573235}
+--- !u!50 &1744999891
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1744999890}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 5
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!4 &1744999893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4901416705017488, guid: 6c95b7f46ddb9554e8e18cd567acf017,
@@ -4854,7 +4897,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.155}
@@ -4870,21 +4913,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.03}
   m_EdgeRadius: 0
---- !u!114 &1744999895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1744999890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 2d967614c2c42a1468640155b304ca36, type: 2}
 --- !u!114 &1744999896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4897,9 +4925,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 1743819954}
+    - {fileID: 894131171}
+--- !u!114 &1744999898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1744999890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c69c179a67ba7db4aaf9bd4f139aa592, type: 2}
 --- !u!1 &1912859151
 GameObject:
   m_ObjectHideFlags: 3
