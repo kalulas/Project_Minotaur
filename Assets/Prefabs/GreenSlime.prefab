@@ -21,10 +21,11 @@ GameObject:
   - component: {fileID: 4901416705017488}
   - component: {fileID: 212737156829046642}
   - component: {fileID: 95234075535214474}
-  - component: {fileID: 50082831670793078}
   - component: {fileID: 61919580685806458}
   - component: {fileID: 114955402022121258}
   - component: {fileID: 114241723936076188}
+  - component: {fileID: 50799220383422854}
+  - component: {fileID: 61490547014975534}
   m_Layer: 9
   m_Name: GreenSlime
   m_TagString: NeedSort
@@ -41,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4236220882846638}
   - component: {fileID: 61515732478622120}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenSlimeAttackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ GameObject:
   - component: {fileID: 4302343372700492}
   - component: {fileID: 61687661956523826}
   - component: {fileID: 114271789679851378}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenSlimeAttackedCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +107,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50082831670793078
+--- !u!50 &50799220383422854
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -126,6 +127,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &61490547014975534
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231751689256590}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.155}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.03}
+  m_EdgeRadius: 0
 --- !u!61 &61515732478622120
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -257,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":15.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"ResetSpeed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1929254703330200}
 --- !u!212 &212737156829046642
@@ -295,7 +321,7 @@ SpriteRenderer:
   m_SortingLayerID: 814956311
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300010, guid: 38d56d4913d71b34b9d362f9967c81cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38d56d4913d71b34b9d362f9967c81cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

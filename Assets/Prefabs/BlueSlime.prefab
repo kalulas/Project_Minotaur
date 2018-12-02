@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4826395715392298}
   - component: {fileID: 61396641017972250}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueSlimeAttackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,10 +37,11 @@ GameObject:
   - component: {fileID: 4484547044011608}
   - component: {fileID: 212148398136501186}
   - component: {fileID: 95681626260219716}
-  - component: {fileID: 50892602737076794}
   - component: {fileID: 61849918560486794}
   - component: {fileID: 114165211690216400}
   - component: {fileID: 114958576395807554}
+  - component: {fileID: 50586814493426372}
+  - component: {fileID: 61384096230013004}
   m_Layer: 9
   m_Name: BlueSlime
   m_TagString: NeedSort
@@ -58,7 +59,7 @@ GameObject:
   - component: {fileID: 4467295838745470}
   - component: {fileID: 61270953039808288}
   - component: {fileID: 114458029500867336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueSlimeAttackedCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +107,7 @@ Transform:
   m_Father: {fileID: 4484547044011608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50892602737076794
+--- !u!50 &50586814493426372
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -150,6 +151,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.1}
+  m_EdgeRadius: 0
+--- !u!61 &61384096230013004
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1638031701325666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.155}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.03}
   m_EdgeRadius: 0
 --- !u!61 &61396641017972250
 BoxCollider2D:
@@ -257,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":15.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"ResetSpeed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1858789163404932}
 --- !u!212 &212148398136501186
@@ -295,7 +321,7 @@ SpriteRenderer:
   m_SortingLayerID: 814956311
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300106, guid: 38d56d4913d71b34b9d362f9967c81cd, type: 3}
+  m_Sprite: {fileID: 21300100, guid: 38d56d4913d71b34b9d362f9967c81cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
