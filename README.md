@@ -25,9 +25,7 @@ Project Minotaur 设计思路
 
 →玩家死亡处理（**差个UI**现在会在一段时间后重启游戏）
 
-→怪物AI（**巡逻完成**，追击，放弃追击（**TODO有点呆呆的**），攻击决定）
-
-（可以通过变量调整怪物警觉程度）
+→怪物AI（**巡逻完成**，**追击，放弃追击**，TODO攻击决定）
 
 →场景→新怪→UI
 
@@ -35,13 +33,13 @@ Project Minotaur 设计思路
 
 
 
-*设计碰撞检测，现在把天花板设为Foreground layer
+\*设计碰撞检测，现在把天花板设为Foreground layer
 
-*注意状态图中的update模块
+\*注意状态图中的update模块
 
-*状态机里加状态机要谨慎
+\*状态机里加状态机要谨慎
 
-*建议小障碍物的sprite分离viot设在底部
+\*建议小障碍物的sprite分离viot设在底部
 
 
 
@@ -61,11 +59,13 @@ sprite动画 动画状态机 初始必要的几个object属性
 4. 血量 Health float
 5. 速度 Speed float
 6. 索敌距离 EyeSight float
-7. 反映时间 Reflection float
-8. *重置位置 暂定用于靠墙恢复位置 ResetPosition
+7. 反应时间 Reflection float
+8. \*重置位置 暂定用于靠墙恢复位置 ResetPosition
 
-玩家 攻击5（有/2效应） 血量25 速度0.5
+**玩家** 攻击5（有/2效应） 血量25 速度0.5
 
-史莱姆 攻击2 血量10 速度0.1 反应时间 0.5 索敌距离0.5 可选范围∈(0, 1]
+**史莱姆** 攻击2 血量10 速度0.1 反应时间 0.5 索敌距离0.5 可选范围∈(0, 1]
 
-**（场景）**冲击力AttackForce 50
+**场景Scene属性**
+
+冲击力AttackForce 50
