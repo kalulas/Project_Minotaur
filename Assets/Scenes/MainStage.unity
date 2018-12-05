@@ -1631,7 +1631,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217266334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.57, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1891,7 +1891,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4484547044011608, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.22
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4484547044011608, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2037,7 +2037,7 @@ GameObject:
   - component: {fileID: 784439843}
   - component: {fileID: 784439842}
   - component: {fileID: 784439841}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2088,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 1
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.33}
 --- !u!483693784 &784439843
 TilemapRenderer:
@@ -3759,10 +3759,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":50.0,"$type":"System.Single"},"$version":"A"},{"name":"ForegroundCelling","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1743819954}
     - {fileID: 38565222}
+    - {fileID: 784439839}
 --- !u!4 &1085533091
 Transform:
   m_ObjectHideFlags: 0
@@ -3790,7 +3791,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4195220724206766, guid: 49dd8344790d7344ebb08b53329abbe2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4195220724206766, guid: 49dd8344790d7344ebb08b53329abbe2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3993,7 +3994,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1461244139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.57, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1912859152}

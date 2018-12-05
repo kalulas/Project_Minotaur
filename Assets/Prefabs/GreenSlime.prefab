@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"ResetSpeed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10000.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"ResetPosition","value":{"x":0.25,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1929254703330200}
 --- !u!212 &212737156829046642
