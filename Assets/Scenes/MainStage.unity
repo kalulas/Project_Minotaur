@@ -143,6 +143,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.04}
   m_EdgeRadius: 0
+--- !u!1 &107678238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1367820175618754, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 510183220}
 --- !u!1 &130949121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,7 +1702,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 268885547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.124, z: 0}
+  m_LocalPosition: {x: -0.66, y: 0.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 545362782}
@@ -1889,6 +1894,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114958576395807554, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
+        type: 2}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4484547044011608, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.29
@@ -1921,7 +1931,35 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4467295838745470, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826395715392298, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114958576395807554, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
+        type: 2}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ResetPosition","value":{"x":-0.29,"y":0.17,"$type":"UnityEngine.Vector2"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114958576395807554, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
+        type: 2}
+      propertyPath: _data._objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 107678238}
+    - target: {fileID: 1638031701325666, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61396641017972250, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61384096230013004, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &545362781
@@ -2071,7 +2109,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3759,11 +3797,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":50.0,"$type":"System.Single"},"$version":"A"},{"name":"ForegroundCelling","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":50.0,"$type":"System.Single"},"$version":"A"},{"name":"ForegroundCelling","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"PlayerAttacked","value":{"$content":3,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1743819954}
     - {fileID: 38565222}
     - {fileID: 784439839}
+    - {fileID: 1488730752}
 --- !u!4 &1085533091
 Transform:
   m_ObjectHideFlags: 0
@@ -4055,6 +4094,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!1 &1489714863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1836253053929214, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+    type: 2}
+  m_PrefabInternal: {fileID: 1614573235}
 --- !u!1 &1590829514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,9 +4263,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114955402022121258, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4901416705017488, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 4901416705017488, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4251,7 +4300,55 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 61515732478622120, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241723936076188, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61919580685806458, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61515732478622120, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61515732478622120, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4302343372700492, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236220882846638, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114955402022121258, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10000.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ResetPosition","value":{"x":0.25,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114955402022121258, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: _data._objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 1489714863}
+    - target: {fileID: 1231751689256590, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61490547014975534, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1733464267
