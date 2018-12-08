@@ -25,13 +25,25 @@ Project Minotaur 设计思路
 
 →玩家死亡处理（**差个UI**现在会在一段时间后重启游戏）
 
-→怪物AI（**巡逻完成**，**追击，放弃追击**，TODO攻击决定）
+→怪物AI（巡逻，追击，放弃追击，攻击决定**完成**）
 
-攻击决定：了解一下现有的做法 
+→场景{ **TODO**
 
-/ 添加一个攻击决定碰撞体，重叠了再激活攻击碰撞体 or 一定距离内就激活
+切换场景的脚本
 
-→场景→新怪→BGM→UI
+按F互动脚本 ->衍生掉落道具（bool决定交互是否掉落）
+
+->衍生限制互动（如有钥匙才能和门互动）
+
+->衍生取消碰撞区（如栅栏 **完成**
+
+场景间保存玩家信息脚本（？）
+
+碰触使用道具脚本
+
+}
+
+→新怪→BGM→UI
 
 （有余力）→音效→怪物掉落
 
@@ -44,6 +56,10 @@ Project Minotaur 设计思路
 \*状态机里加状态机要谨慎
 
 *试一下墙壁检测能不能改进
+
+*怪物受击有点BUG不过我改不动了
+
+\* **人为什么会被打进墙里面？？？**
 
 \*建议小障碍物的sprite分离viot设在底部
 
@@ -60,13 +76,15 @@ sprite动画 动画状态机 初始必要的几个object属性
 **怪物object属性** 
 
 1. 被击碰撞区 AttackedCollider GameObject  
-2. 运动 Movement Vector2
-3. 攻击 Attack float
-4. 血量 Health float
-5. 速度 Speed float
-6. 索敌距离 EyeSight float
-7. 反应时间 Reflection float
-8. \*重置位置 暂定用于靠墙恢复位置 ResetPosition
+2. 攻击碰撞区 AttackCollider GameObject
+3. 运动 Movement Vector2
+4. 攻击 Attack float
+5. 血量 Health float
+6. 速度 Speed float
+7. 索敌距离 EyeSight float
+8. 反应时间 Reflection float
+9. 仇恨类型 Follow bool（是否放弃追击
+10. \*重置位置 暂定用于靠墙恢复位置 ResetPosition
 
 **TODO：**尝试一下ResetPosition属性能不能自动保存
 
