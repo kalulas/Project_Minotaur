@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: ApplicationVariables
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackForce","value":{"$content":50.0,"$type":"System.Single"},"$version":"A"},{"name":"ChangeSceneSituation","value":{"$content":"FromLevel0ToLevel1","$type":"System.String"},"$version":"A"},{"name":"FromLevel0ToLevel1","value":{"x":1.43,"y":-0.3,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"FromLevel1ToLevel1.5","value":{"x":0.242,"y":1.036,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"FromLevel1.5ToLevel1","value":{"x":0.253,"y":0.9770229,"$type":"UnityEngine.Vector2"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
