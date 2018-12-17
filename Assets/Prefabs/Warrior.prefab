@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114129100352994364}
   - component: {fileID: 114350475238397140}
   - component: {fileID: 61787734936169108}
+  - component: {fileID: 114832056463551840}
   m_Layer: 8
   m_Name: Warrior
   m_TagString: NeedSort
@@ -41,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4885860301897682}
   - component: {fileID: 61937151501907692}
+  - component: {fileID: 114823825061771816}
   m_Layer: 0
   m_Name: WarriorAttackedCollider
   m_TagString: Untagged
@@ -71,8 +73,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1289647517313174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.45, y: -0.37, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.372907, y: -0.4248429, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4922850915082180}
   - {fileID: 4885860301897682}
@@ -245,9 +247,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":25.0,"$type":"System.Single"},"$version":"A"},{"name":"ResetSpeed","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"GotKey","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Speed","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Attack","value":{"$content":5.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":25.0,"$type":"System.Single"},"$version":"A"},{"name":"ResetSpeed","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"GotKey","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1410216420140834}
+--- !u!114 &114823825061771816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410216420140834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 305935433, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114832056463551840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1289647517313174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 305935433, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212955843004009268
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -282,8 +306,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 814956311
   m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 58713698fd0d39f42b16c9e349c35377, type: 3}
+  m_SortingOrder: 11
+  m_Sprite: {fileID: 21300014, guid: 58713698fd0d39f42b16c9e349c35377, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
