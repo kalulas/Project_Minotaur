@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1028899440913550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19592148, y: 0.48123592, z: 0.19384766}
+  m_LocalPosition: {x: -0.464, y: 0.399, z: 0.19384766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4336548277913388}
@@ -137,7 +137,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.058878347, y: 0.09319207}
+  m_Offset: {x: -0.058878347, y: 0.098622106}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -148,7 +148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08840397, y: 0.10410696}
+  m_Size: {x: 0.08840397, y: 0.054150388}
   m_EdgeRadius: 0
 --- !u!61 &61594535785572900
 BoxCollider2D:
@@ -162,7 +162,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007851571, y: 0.08590977}
+  m_Offset: {x: -0.007851571, y: 0.061568692}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -173,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11429685, y: 0.13737717}
+  m_Size: {x: 0.11429685, y: 0.08869502}
   m_EdgeRadius: 0
 --- !u!61 &61938874261647312
 BoxCollider2D:
@@ -245,10 +245,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":15.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.7,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":25.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"CarriedItem","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"StopMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1622747843627306}
     - {fileID: 1534117348673706}
+    - {fileID: 1712559902542218, guid: 9907e36aa947959448e4ecdd98448f0d, type: 2}
 --- !u!212 &212672781565865826
 SpriteRenderer:
   m_ObjectHideFlags: 1

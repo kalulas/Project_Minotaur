@@ -163,7 +163,7 @@ Prefab:
     - target: {fileID: 224197031236122328, guid: 4247b3644330b954aafc1b49e41f00c2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224197031236122328, guid: 4247b3644330b954aafc1b49e41f00c2,
         type: 2}
@@ -250,13 +250,8 @@ Transform:
   m_Children:
   - {fileID: 1277972056}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &268885548 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1245048093}
 --- !u!1001 &365630181
 Prefab:
   m_ObjectHideFlags: 0
@@ -326,7 +321,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447587209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2061466, y: -0.22, z: -0.011738416}
+  m_LocalPosition: {x: 0.82863593, y: 0.08283371, z: 0.029159214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1678724977}
@@ -335,8 +330,8 @@ Transform:
   - {fileID: 1955019205}
   - {fileID: 1137475355}
   - {fileID: 1445347377}
-  m_Father: {fileID: 545362782}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &510183220
 Prefab:
@@ -380,7 +375,7 @@ Prefab:
     - target: {fileID: 114958576395807554, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
         type: 2}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"StopMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49d69d007d0b0944f8f8ab98234ee9b5, type: 2}
@@ -486,36 +481,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &545362781
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 545362782}
-  m_Layer: 0
-  m_Name: Barrier
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &545362782
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 545362781}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.62248933, y: 0.3028337, z: 0.04089763}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 268885548}
-  - {fileID: 447587210}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &758387235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4195220724206766, guid: 49dd8344790d7344ebb08b53329abbe2,
@@ -568,7 +533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4606312800982834, guid: e7fdddae20cbca444a06823da26f8fa1, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1307964044660650, guid: e7fdddae20cbca444a06823da26f8fa1, type: 2}
       propertyPath: m_Name
@@ -622,7 +587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4904193935612058, guid: 7c5dd057d83aa044cbabb72009dec2a2, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c5dd057d83aa044cbabb72009dec2a2, type: 2}
@@ -692,7 +657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085533088
 GameObject:
@@ -752,7 +717,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116793929
 GameObject:
@@ -781,7 +746,7 @@ Transform:
   m_Children:
   - {fileID: 1545049608}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137475354
 GameObject:
@@ -913,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"OriginalState","value":{"$content":0,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"AnotherState","value":{"$content":1,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"Activated","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearBy","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ContainItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"NeedKey","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"OriginalState","value":{"$content":0,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"AnotherState","value":{"$content":1,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"Activated","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearBy","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ContainItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"NeedKey","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"IsTrap","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 11400000, guid: cc1c837560729af4faad63239e98fbc3, type: 2}
     - {fileID: 11400000, guid: 4a1413223d6255e46ab93c2116503927, type: 2}
@@ -1055,7 +1020,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4195220724206766, guid: 49dd8344790d7344ebb08b53329abbe2, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 61782174344539152, guid: 49dd8344790d7344ebb08b53329abbe2,
         type: 2}
@@ -1070,31 +1035,31 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 545362782}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.259
+      value: -0.6365106
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.188
+      value: 0.4908337
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.04089763
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1102,12 +1067,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4828030184945128, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114735683194525646, guid: 3211e1d23e6ae564b9758dc4be892da5,
         type: 2}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"OriginalState","value":{"$content":0,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"AnotherState","value":{"$content":1,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"Activated","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearBy","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ContainItem","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"Item","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"NeedKey","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"OriginalState","value":{"$content":0,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"AnotherState","value":{"$content":1,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"Activated","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearBy","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ContainItem","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"Item","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"NeedKey","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"IsTrap","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3211e1d23e6ae564b9758dc4be892da5, type: 2}
@@ -1139,7 +1104,7 @@ Transform:
   m_Children:
   - {fileID: 950501238}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1277972056 stripped
 Transform:
@@ -1183,7 +1148,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4136745434969778, guid: 1a3136414f6901b4a97bc58314b6cb19, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1258718596301022, guid: 1a3136414f6901b4a97bc58314b6cb19, type: 2}
       propertyPath: m_Name
@@ -1346,6 +1311,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114955402022121258, guid: 6c95b7f46ddb9554e8e18cd567acf017,
+        type: 2}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10000.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"StopMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c95b7f46ddb9554e8e18cd567acf017, type: 2}
   m_IsPrefabAsset: 0
@@ -1396,7 +1366,7 @@ Prefab:
     - target: {fileID: 114958576395807554, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
         type: 2}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"CarriedItem","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.5,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"CarriedItem","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"StopMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 114958576395807554, guid: 49d69d007d0b0944f8f8ab98234ee9b5,
         type: 2}
@@ -1695,7 +1665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"OriginalState","value":{"$content":0,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"AnotherState","value":{"$content":1,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"Activated","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearBy","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ContainItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"NeedKey","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"OriginalState","value":{"$content":0,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"AnotherState","value":{"$content":1,"$type":"UnityEngine.Tilemaps.Tile"},"$version":"A"},{"name":"Activated","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"PlayerNearBy","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"ContainItem","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"NeedKey","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"IsTrap","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 11400000, guid: a2dc5659aa9f0fe4e8d9b8bd7e049a10, type: 2}
     - {fileID: 11400000, guid: 90438e2cc5855f540943b6ad18632242, type: 2}
