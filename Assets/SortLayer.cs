@@ -24,7 +24,7 @@ public class SortLayer : MonoBehaviour {
 			SortDict.Add(Object, y);
 		}
 		var SortedDict = from entry in SortDict orderby entry.Value descending select entry;
-		Debug.Log(SortedDict);
+		//Debug.Log(SortedDict);
 		foreach( var Object in SortedDict){
 			//if(Object.Key.GetComponent<SpriteRenderer>())
 			Object.Key.GetComponent<Renderer>().sortingOrder = layer;

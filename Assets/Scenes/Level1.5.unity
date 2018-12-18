@@ -988,13 +988,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":50.0,"$type":"System.Single"},"$version":"A"},{"name":"ForegroundCelling","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"PlayerAttacked","value":{"$content":3,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"SceneResetPosition","value":{"x":-0.16,"y":0.4,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"GameNotice","value":{"$content":4,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerAttack","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Player","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackForce","value":{"$content":50.0,"$type":"System.Single"},"$version":"A"},{"name":"ForegroundCelling","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"PlayerAttacked","value":{"$content":3,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"SceneResetPosition","value":{"x":-0.16,"y":0.4,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"GameNotice","value":{"$content":4,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"GameOver","value":{"$content":5,"$type":"UnityEngine.GameObject"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2111059244}
     - {fileID: 1560739290}
     - {fileID: 499016772}
     - {fileID: 1327361513}
     - {fileID: 1940618461}
+    - {fileID: 1940618462}
 --- !u!4 &247005702
 Transform:
   m_ObjectHideFlags: 0
@@ -11125,12 +11126,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1164482969104170, guid: 4247b3644330b954aafc1b49e41f00c2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4247b3644330b954aafc1b49e41f00c2, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1940618461 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1711645384319964, guid: 4247b3644330b954aafc1b49e41f00c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1940618460}
+--- !u!1 &1940618462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1164482969104170, guid: 4247b3644330b954aafc1b49e41f00c2,
     type: 2}
   m_PrefabInternal: {fileID: 1940618460}
 --- !u!4 &2007280616 stripped
