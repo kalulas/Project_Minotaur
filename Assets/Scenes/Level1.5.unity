@@ -155,7 +155,7 @@ Prefab:
     - target: {fileID: 20889119766571342, guid: aef112b90a967a34aab6590b0aea3b7f,
         type: 2}
       propertyPath: orthographic size
-      value: 1.3
+      value: 1.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef112b90a967a34aab6590b0aea3b7f, type: 2}
@@ -1295,6 +1295,11 @@ Prefab:
         type: 2}
       propertyPath: m_Size.y
       value: 0.08907378
+      objectReference: {fileID: 0}
+    - target: {fileID: 114844412489264332, guid: e833f18599a77cd4aafdf30da2b0b8c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e833f18599a77cd4aafdf30da2b0b8c7, type: 2}
@@ -19234,6 +19239,11 @@ Prefab:
         type: 2}
       propertyPath: _data._json
       value: '{"declarations":{"collection":{"$content":[{"name":"AttackedCollider","value":{"$content":0,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"AttackCollider","value":{"$content":1,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"Movement","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Attack","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"Health","value":{"$content":25.0,"$type":"System.Single"},"$version":"A"},{"name":"Speed","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"},{"name":"EyeSight","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"Reflection","value":{"$content":0.1,"$type":"System.Single"},"$version":"A"},{"name":"Follow","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CarryItem","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"CarriedItem","value":{"$content":2,"$type":"UnityEngine.GameObject"},"$version":"A"},{"name":"StopMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114438107080154570, guid: ef2a7eee36de7b04eaaba3731692026b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef2a7eee36de7b04eaaba3731692026b, type: 2}
