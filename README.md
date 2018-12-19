@@ -1,9 +1,112 @@
-# 三分钟就能完成的米诺陶领风格简易地牢
-Project Minotaur 设计思路
+# 三分钟就能完成的米诺陶风格简易地下城
+How to Build The Dungeon of Minotaur In Three Minutes
+
+&nbsp;
+
+![BattleSlime.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/BattleSlime.gif?raw=true)
+
+![ChestOpen.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/ChestOpen.gif?raw=true)
+
+![YouDied.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/YouDied.gif?raw=true)
+
+&nbsp;
+
+### 地下城主人的寄语
+
+随手捏的地城怪物也好领主也好全是杂鱼，
+
+由史莱姆一家看守的第一层，哥布林兄弟看守的第二层，还有米诺陶领主镇守的地城底层。
+
+因为年末了大家都很忙只好请看上去就是劳碌命也任劳任怨的米诺陶来当一下地城领主，
+
+其实除了打人很痛也没有什么厉害的…
+
+嘛总之大家一起快乐地进行地城探险吧。
+
+第一个找到地城主人签名的人奖赏五十枚金币噢。
+
+（说是探险不过也只有三层啊喂
+
+&nbsp;
 
 
+### **地下城怪物素质检测**
 
-### **实现过程**
+|                                                              |    类型    | 攻击 | 血量 | 速度 | 索敌距离 | 反应时间 | 是否跟随 |
+| :----------------------------------------------------------: | :--------: | :--: | :--: | :--: | :------: | :------: | :------: |
+| ![Warrior.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/Warrior.gif?raw=true) |    玩家    |  5   |  25  | 0.5  |    -     |    -     |    -     |
+| ![Slime.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/Slime.gif?raw=true) |   史莱姆   |  2   |  10  | 0.1  |   0.5    |   0.5    |    no    |
+| ![Goblin.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/Goblin.gif?raw=true) |   哥布林   |  4   |  15  | 0.3  |    1     |   0.1    |    no    |
+| ![ExGoblin.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/ExGoblin.gif?raw=true) | 装甲哥布林 |  5   |  30  | 0.15 |    1     |   0.1    |    no    |
+| ![Skeleton.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/Skeleton.gif?raw=true) |    骷髅    |  7   |  7   | 0.5  |    1     |   0.2    |    no    |
+| ![Minotaur.gif](https://github.com/KaLuLas/Project_Minotaur/blob/master/Gif/Minotaur.gif?raw=true) |   米诺陶   |  8   |  57  | 0.1  |    1     |   0.2    |   yes    |
+
+&nbsp;
+
+### **地下城怪物的制作流程**
+
+sprite动画 动画状态机 初始必要的object属性
+
+tag设置needsort layer设置monster
+
+放到中间层in the middle，加上相对命名格式的三个碰撞体collider
+
+&nbsp;
+
+### **一个合格怪物具备的属性** 
+
+1. 被击碰撞区 AttackedCollider GameObject  
+2. 攻击碰撞区 AttackCollider GameObject
+3. 运动 Movement Vector2
+4. 攻击 Attack float
+5. 血量 Health float
+6. 速度 Speed float
+7. 索敌距离 EyeSight float
+8. 反应时间 Reflection float
+9. 是否追击 Follow bool
+10. 是否携带物品 CarryItem bool
+11. 所携带物品 CarriedItem GameObject
+12. 脚本用 StopMoving bool
+
+&nbsp;
+
+### **场景变量Scene**
+
+Player 玩家，一般用于获得位置
+
+PlayerAttack 玩家攻击碰撞区
+
+PlayerAttacked 玩家受击碰撞区
+
+ForegroundCelling 用于怪物的边缘检测
+
+GameNotice 游戏中的通知栏，用于道具交互，效果提示
+
+SceneResetPosition 为每个场景保存的怪物移动复原位置
+
+GameOver 玩家生命耗尽死亡
+
+&nbsp;
+
+### **应用变量**Application
+
+AttackForce 冲击力 50
+
+PlayerHealth 切换场景保存血量
+
+PlayerAttack 切换场景保存攻击力 可能因为药水上升
+
+PlayerHealthMax 玩家允许最大血量
+
+PlayerGotKey 玩家是否持有钥匙 本次设计中钥匙为场景占有
+
+ChangeSceneSituation 玩家从哪一个场景进入哪一个场景，用于位置调整
+
+GameClear 通关！
+
+&nbsp;
+
+### **三分钟地下城实现过程**
 
 加入图层排序（**完成**）
 
@@ -63,9 +166,9 @@ Project Minotaur 设计思路
 
 →音效 **大概是不做了**
 
+&nbsp;
 
-
-### 设计要点和注意事项
+### 三分钟地下城设计要点和注意事项
 
 人物/怪物攻击时调用攻击区，受击区trigger，地形区非trigger，人物和怪物没有地形碰撞 ok
 
@@ -91,76 +194,4 @@ Project Minotaur 设计思路
 
 
 
-### **怪物的生产流程**
-
-sprite动画 动画状态机 初始必要的object属性
-
-tag设置needsort layer设置monster
-
-放到中间层in the middle，加上相对命名格式的三个碰撞体collider
-
-
-
-### **怪物属性** 
-
-1. 被击碰撞区 AttackedCollider GameObject  
-2. 攻击碰撞区 AttackCollider GameObject
-3. 运动 Movement Vector2
-4. 攻击 Attack float
-5. 血量 Health float
-6. 速度 Speed float
-7. 索敌距离 EyeSight float
-8. 反应时间 Reflection float
-9. 是否追击 Follow bool
-10. 是否携带物品 CarryItem bool
-11. 所携带物品 CarriedItem GameObject
-12. 脚本用 StopMoving bool
-
-
-
-### **数值属性**
-
-|    类型    | 攻击 | 血量 | 速度 | 索敌距离 | 反应时间 | 是否跟随 |
-| :--------: | :--: | :--: | :--: | :------: | :------: | :------: |
-|    玩家    |  5   |  25  | 0.5  |    -     |    -     |    -     |
-|   史莱姆   |  2   |  10  | 0.1  |   0.5    |   0.5    |    no    |
-|   哥布林   |  4   |  15  | 0.3  |    1     |   0.1    |    no    |
-| 装甲哥布林 |  5   |  30  | 0.15 |    1     |   0.1    |    no    |
-|    骷髅    |  7   |  7   | 0.5  |    1     |   0.2    |    no    |
-|   米诺陶   |  8   |  57  | 0.1  |    1     |   0.2    |   yes    |
-
-
-
-**场景变量**
-
-Player 玩家，一般用于获得位置
-
-PlayerAttack 玩家攻击碰撞区
-
-PlayerAttacked 玩家受击碰撞区
-
-ForegroundCelling 用于怪物的边缘检测
-
-GameNotice 游戏中的通知栏，用于道具交互，效果提示
-
-SceneResetPosition 为每个场景保存的怪物移动复原位置
-
-GameOver 玩家生命耗尽死亡
-
-
-
-**应用变量**
-
-AttackForce 冲击力 50
-
-PlayerHealth 切换场景保存血量
-
-PlayerAttack 切换场景保存攻击力 可能因为药水上升
-
-PlayerHealthMax 玩家允许最大血量
-
-PlayerGotKey 玩家是否持有钥匙 本次设计中钥匙为场景占有
-
-ChangeSceneSituation 玩家从哪一个场景进入哪一个场景，用于位置调整
-
-GameClear 通关！
+——KaLuLas 2018/12/19
